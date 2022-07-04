@@ -34,8 +34,8 @@ def main():
 
 # Small logic I tweeked :-
 <ol>
-    <li> It is given in question that :- 
-    * if first_name + last_name + email match between two profiles is greater than
+    <li> It is given in question that :- <br>
+    if first_name + last_name + email match between two profiles is greater than
 80% (you can try using a library like https://pypi.org/project/fuzzywuzzy/), increase the match score to 1
 
 <li> Also in <strong>find_duplicates</strong> sometimes all these 3 fields are not passed
