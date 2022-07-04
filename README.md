@@ -45,3 +45,9 @@ def main():
 *  To resolve this confusion, what I have done :-
     * If any of `first_name, last_name, email_field` is passed, the fuzz logic is performed as in every Profile these fields are mandatory to be there and they will be there.
     * if fuzz_logic gives >80% match, total_match_score is incremented by 1
+ <hr>
+ <ol>
+    <li> The code today is extensible for more than 2 profiles, but the fuzzywuzzy comparison runs for only 2 string at a time.
+</ol>
+*  To resolve this confusion, what I have done :-
+   * The `first profile (0 index profile`) is used like an anchor profile, it `compares itself with every other` logic for fuzzy fields (first_name, last_name,email_field) and the `minimum match %` is used to `decide` the the `total match score update(whether to increment or not)`
