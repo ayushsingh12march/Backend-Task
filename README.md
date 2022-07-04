@@ -49,5 +49,6 @@ def main():
  <ol>
     <li> The code today is extensible for more than 2 profiles, but the fuzzywuzzy comparison runs for only 2 string at a time.
 </ol>
+
 *  To resolve this confusion, what I have done :-
    * The `first profile (0 index profile`) is used like an anchor profile, it `compares itself with every other` logic for fuzzy fields (first_name, last_name,email_field) and the `minimum match %` is used to `decide` the the `total match score update(whether to increment or not)`
